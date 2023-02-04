@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 
 const movieSchema = new mongoose.Schema({
+  id: String,
   name: {
     type: String,
     require: true,
@@ -22,5 +23,13 @@ const movieSchema = new mongoose.Schema({
     require: true,
   },
 });
+
+// movieSchema.virtual("id").get(function () {
+//   return this._id.toHexString();
+// });
+
+// movieSchema.set("toJSON", {
+//   virtuals: true,
+// });
 
 module.exports = mongoose.model("movie", movieSchema);
