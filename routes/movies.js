@@ -7,7 +7,7 @@ router.get("/movies", async (req, res) => {
     const page = parseInt(req.query.page) - 1 || 0;
     const limit = parseInt(req.query.limit) || 8;
     const search = req.query.search || "";
-    const category = req.query.category || "";
+
     let sort = req.query.sort || "rating";
     let genre = req.query.genre || "All";
 
@@ -41,7 +41,6 @@ router.get("/movies", async (req, res) => {
     const movies = await Movie.find({
       name: {
         $regex: search,
-        $regex: category,
         $options: "i",
       },
     })
@@ -55,7 +54,6 @@ router.get("/movies", async (req, res) => {
       genre: { $in: [...genre] },
       name: {
         $regex: search,
-        $regex: category,
         $options: "i",
       },
     });
