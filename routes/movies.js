@@ -10,6 +10,7 @@ router.get("/movies", async (req, res) => {
 
     let sort = req.query.sort || "rating";
     let genre = req.query.genre || "All";
+    let category = req.query.category || "All";
 
     const genreOptions = [
       "Action",
@@ -24,9 +25,15 @@ router.get("/movies", async (req, res) => {
       "Family",
     ];
 
+    const categoryOptions = ["Movies", "TV Shows"];
+
     genre === "All"
       ? (genre = [...genreOptions])
       : (genre = req.query.genre.split(","));
+
+    category === "All"
+      ? (category = [...categoryOptions])
+      : (category = req.query.category);
 
     req.query.sort ? (sort = req.query.sort.split(",")) : (sort = [sort]);
 
@@ -44,6 +51,8 @@ router.get("/movies", async (req, res) => {
         $options: "i",
       },
     })
+      .where("category")
+      .in(category)
       .where("genre")
       .in([...genre])
       .sort(sortBy)
@@ -51,6 +60,7 @@ router.get("/movies", async (req, res) => {
       .limit(limit);
 
     const total = await Movie.countDocuments({
+      category: { $in: category },
       genre: { $in: [...genre] },
       name: {
         $regex: search,
