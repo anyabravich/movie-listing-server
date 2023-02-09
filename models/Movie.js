@@ -22,7 +22,7 @@ const movieSchema = new mongoose.Schema({
     type: Number,
     require: true,
   },
-  type: {
+  category: {
     type: String,
     require: true,
   },
