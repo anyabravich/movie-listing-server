@@ -14,10 +14,6 @@ const movieSchema = new mongoose.Schema({
     type: Number,
     require: true,
   },
-  genre: {
-    type: [String],
-    require: true,
-  },
   rating: {
     type: Number,
     require: true,
@@ -27,13 +23,5 @@ const movieSchema = new mongoose.Schema({
     require: true,
   },
 });
-
-// movieSchema.virtual("id").get(function () {
-//   return this._id.toHexString();
-// });
-
-// movieSchema.set("toJSON", {
-//   virtuals: true,
-// });
 
 module.exports = mongoose.model("movie", movieSchema);

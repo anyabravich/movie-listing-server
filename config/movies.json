@@ -4,55 +4,63 @@
     "img": "https://res.cloudinary.com/duk6gqw1x/image/upload/v1675498065/movie-listing/Shang-Chi-and-the-Legend-of-the-Ten-Rings-Releases-New_1_alln3q.png",
     "year": "1994",
     "genre": ["Drama", "Crime"],
-    "rating": "6.8"
+    "rating": "6.8",
+    "category": "movie"
   },
   {
     "name": "Shang Chi",
     "img": "https://res.cloudinary.com/duk6gqw1x/image/upload/v1675498065/movie-listing/Shang-Chi-and-the-Legend-of-the-Ten-Rings-Releases-New_2_q0erpu.png",
     "year": "1972",
     "genre": ["Drama", "Crime"],
-    "rating": "7.9"
+    "rating": "7.9",
+    "category": "show"
   },
   {
     "name": "Loki",
     "img": "https://res.cloudinary.com/duk6gqw1x/image/upload/v1675498065/movie-listing/Shang-Chi-and-the-Legend-of-the-Ten-Rings-Releases-New_3_voxutx.png",
     "year": "2008",
     "genre": ["Action", "Adventure"],
-    "rating": "9.0"
+    "rating": "9.0",
+    "category": "show"
   },
   {
     "name": "How I Met Your Mother",
     "img": "https://res.cloudinary.com/duk6gqw1x/image/upload/v1675498066/movie-listing/Shang-Chi-and-the-Legend-of-the-Ten-Rings-Releases-New_4_kyogsq.png",
     "year": "1994",
     "genre": ["Drama", "Crime"],
-    "rating": "8.9"
+    "rating": "8.9",
+    "category": "show"
   },
   {
     "name": "Money Heist",
     "img": "https://m.media-amazon.com/images/M/MV5BNWIwODRlZTUtY2U3ZS00Yzg1LWJhNzYtMmZiYmEyNmU1NjMzXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_FMjpg_UX674_.jpg",
     "year": "1994",
     "genre": ["Drama", "Romance"],
-    "rating": "8.8"
+    "rating": "8.8",
+    "category": "show"
   },
   {
     "name": "Friends",
     "img": "https://res.cloudinary.com/duk6gqw1x/image/upload/v1675498065/movie-listing/Shang-Chi-and-the-Legend-of-the-Ten-Rings-Releases-New_5_ug8tak.png",
     "year": "1999",
     "genre": ["Drama", "Thriller"],
-    "rating": "8.8"
+    "rating": "8.8",
+    "category": "movie"
   },
   {
     "name": "The Big Bang Theory",
     "img": "https://res.cloudinary.com/duk6gqw1x/image/upload/v1675498065/movie-listing/Shang-Chi-and-the-Legend-of-the-Ten-Rings-Releases-New_7_c4jicb.png",
     "year": "1999",
     "genre": ["Sci-fi", "Action"],
-    "rating": "8.7"
+    "rating": "8.7",
+    "category": "movie"
   },
   {
     "name": "Two And a Half Men",
     "img": "https://res.cloudinary.com/duk6gqw1x/image/upload/v1675498066/movie-listing/Shang-Chi-and-the-Legend-of-the-Ten-Rings-Releases-New_8_dy2i59.png",
     "year": "1990",
     "genre": ["Drama", "Crime"],
-    "rating": "8.7"
+    "rating": "8.7",
+    "category": "movie"
   }
 ]
