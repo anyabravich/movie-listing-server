@@ -14,6 +14,10 @@ const movieSchema = new mongoose.Schema({
     type: Number,
     require: true,
   },
+  genre: {
+    type: [String],
+    require: true,
+  },
   rating: {
     type: Number,
     require: true,

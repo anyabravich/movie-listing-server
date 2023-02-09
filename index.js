@@ -13,9 +13,6 @@ app.use(cors());
 
 app.use("/api", movieRoutes);
 app.use("/api/movies", movie);
-// app.get("/api/movies/:id", function (req, res) {
-//   res.send("id: " + req.params.id);
-// });
 
 const port = process.env.PORT || 8080;
 app.listen(port, () => console.log(`Listening on port ${port}...`));
