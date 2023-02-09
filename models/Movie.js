@@ -22,6 +22,10 @@ const movieSchema = new mongoose.Schema({
     type: Number,
     require: true,
   },
+  type: {
+    type: String,
+    require: true,
+  },
 });
 
 // movieSchema.virtual("id").get(function () {
