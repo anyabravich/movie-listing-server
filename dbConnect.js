@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 mongoose.set("strictQuery", true);
 
 const dbConnect = () => {
@@ -18,4 +18,4 @@ const dbConnect = () => {
   });
 };
 
-module.exports = dbConnect;
+export default dbConnect;

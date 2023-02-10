@@ -1,6 +1,7 @@
-const router = require("express").Router();
-const Movie = require("../models/Movie");
-const movies = require("../config/movies.json");
+import express from "express";
+import Movie from "../models/Movie.js";
+
+const router = express.Router();
 
 router.get("/movies", async (req, res) => {
   try {
@@ -84,17 +85,4 @@ router.get("/movies", async (req, res) => {
   }
 });
 
-// const insertMovies = async () => {
-//   try {
-//     const docs = await Movie.insertMany(movies);
-//     return Promise.resolve(docs);
-//   } catch (err) {
-//     return Promise.reject(err);
-//   }
-// };
-
-// insertMovies()
-//   .then((docs) => console.log(docs))
-//   .catch((err) => console.log(err));
-
-module.exports = router;
+export default router;

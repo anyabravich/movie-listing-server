@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
 const movieSchema = new mongoose.Schema({
   id: String,
@@ -26,6 +26,10 @@ const movieSchema = new mongoose.Schema({
     type: String,
     require: true,
   },
+  text: {
+    type: String,
+    require: true,
+  },
 });
 
-module.exports = mongoose.model("movie", movieSchema);
+export default mongoose.model("movie", movieSchema);
